@@ -24,7 +24,7 @@ abstract class AbstractProduct
         protected string $price,
 
         #[ORM\Column(length: 12, unique: true)]
-        protected string $SKU,
+        protected string $sku,
 
         #[ORM\Column]
         protected int    $quantity,
@@ -48,8 +48,8 @@ abstract class AbstractProduct
         return $this->quantity;
     }
 
-    public function SKU(): string {
-        return $this->SKU;
+    public function sku(): string {
+        return $this->sku;
     }
 
 }
