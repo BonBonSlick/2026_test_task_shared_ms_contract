@@ -1,7 +1,6 @@
 {
   "name": "test-task-shared/core-contracts",
   "description": "Shared code and DTOs for Microservices",
-  "version": "1.0.1",
   "type": "library",
   "license": "proprietary",
   "autoload": {
