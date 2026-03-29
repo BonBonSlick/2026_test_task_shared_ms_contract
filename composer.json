@@ -1,0 +1,17 @@
+{
+  "name": "test-task-shared/core-contracts",
+  "description": "Shared code and DTOs for Microservices",
+  "type": "library",
+  "license": "proprietary",
+  "autoload": {
+    "psr-4": {
+      "Shared\\Contracts\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=8.3",
+    "doctrine/orm": "^3.6",
+    "symfony/uid": "^8.0",
+    "symfony/validator": "^8.0"
+  }
+}
