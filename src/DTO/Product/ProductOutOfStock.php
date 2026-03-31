@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Shared\Contracts\DTO;
+namespace Shared\Contracts\DTO\Product;
 
 use Symfony\Component\Validator\Constraints as Assert;
 
-final readonly class ProductQuantityDecreased
+final readonly class ProductOutOfStock
 {
 
     public function __construct(
@@ -14,8 +14,6 @@ final readonly class ProductQuantityDecreased
         public string $productID,
         #[Assert\Uuid]
         public string $orderID,
-        #[Assert\GreaterThan(0)]
-        public int    $updatedQuantity,
     ) {}
 
 }
