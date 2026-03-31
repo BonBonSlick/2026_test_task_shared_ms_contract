@@ -14,7 +14,7 @@ abstract class AbstractProduct
 
     #[ORM\Id]
     #[ORM\Column(type: 'uuid')]
-    protected readonly Uuid $id;
+    protected Uuid $id;
 
     public function __construct(
         #[ORM\Column(length: 255)]
