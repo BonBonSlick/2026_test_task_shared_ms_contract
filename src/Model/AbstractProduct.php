@@ -52,4 +52,7 @@ abstract class AbstractProduct
         return $this->sku;
     }
 
+    public function decreaseQuantity(int $quantity): void {
+        $this->quantity -= $quantity;
+    }
 }
