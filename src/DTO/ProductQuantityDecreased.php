@@ -13,7 +13,7 @@ final readonly class ProductQuantityDecreased
         #[Assert\Uuid]
         public string $productID,
         #[Assert\GreaterThan(0)]
-        public int    $quantity,
+        public int    $updatedQuantity,
     ) {}
 
 }
